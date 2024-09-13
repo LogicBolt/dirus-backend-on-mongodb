@@ -20,6 +20,6 @@ app.use('/api/user', userRoutes);
 // Error handling middleware (if needed in the future)
 
 // Start server
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server is running on http://localhost:${PORT}`);
+// });
