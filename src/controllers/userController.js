@@ -47,7 +47,7 @@ const updatePoint = async (req, res) => {
             userId,
             userName,
             is_new: true,
-            points: 500,
+            points: 5000,
             referer: startParam || 'self',  // Get the referer from headers if available
           });
           console.log(newUser)
