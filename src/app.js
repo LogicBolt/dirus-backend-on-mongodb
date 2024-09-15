@@ -2,7 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const userRoutes = require('./routes/userRoutes');
-
+const cors = require('cors');
 dotenv.config();
 
 const app = express();
@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB
 connectDB();
+
+app.use(cors());
 
 // Middleware
 app.use(express.json());
