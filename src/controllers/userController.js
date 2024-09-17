@@ -18,7 +18,7 @@ const getUser = async (req, res) => {
       const newUser = new User({
         userId,
         userName,
-
+        createAt : Date.now(),
         points: 5000,
         referer: startParam || 'self',  // Get the referer from headers if available
       });
