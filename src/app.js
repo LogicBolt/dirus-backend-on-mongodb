@@ -3,6 +3,7 @@ const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const userRoutes = require('./routes/userRoutes');
 const gameUserRoutes = require('./routes/gameUserRoutes');
+const nekoRoutes = require('./routes/nekoRoutes');
 const cors = require('cors');
 dotenv.config();
 
@@ -20,6 +21,7 @@ app.use(express.json());
 // Routes
 app.use('/api/user', userRoutes);
 app.use('/api/game', gameUserRoutes);
+app.use('/api/neko', nekoRoutes);
 // Error handling middleware (if needed in the future)
 
 // Start server
